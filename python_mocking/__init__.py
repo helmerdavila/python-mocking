@@ -1,3 +1,3 @@
-from .main import hello_from_docker
+from .main import call_single_endpoint
 
-__all__ = ["hello_from_docker"]
+__all__ = ["call_single_endpoint"]
