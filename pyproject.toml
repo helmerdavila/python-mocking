@@ -8,7 +8,6 @@ packages = [{include = "python_mocking"}]
 
 [tool.poetry.scripts]
 http-real = "python_mocking:call_single_endpoint"
-http-mock = "tests:call_single_endpoint_mock"
 
 [tool.poetry.dependencies]
 python = "^3.10"
