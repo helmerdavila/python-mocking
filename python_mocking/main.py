@@ -1,9 +1,6 @@
-import docker
-
-client = docker.from_env()
+import requests
 
 
 def hello_from_docker():
-    containers = client.containers.list()
-    images = client.images.list()
-    print(containers, images)
+    request = requests.get('https://jsonplaceholder.typicode.com/todos/1')
+    print(request.json())

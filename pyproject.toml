@@ -11,7 +11,7 @@ python-mocking = "python_mocking:hello_from_docker"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-docker = "^6.1.3"
+requests = "^2.31.0"
 
 
 [build-system]
