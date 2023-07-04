@@ -1,0 +1,28 @@
+# Ignore Poetry virtual environment files
+.venv/
+.poetry/
+
+# Ignore the Poetry lock file
+poetry.lock
+
+# Ignore the Poetry build and distribution files
+dist/
+build/
+*.egg-info/
+
+# Ignore IDE or editor specific files
+.vscode/
+.idea/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore any local configuration or sensitive information
+config.ini
+secrets.ini
+
+# Ignore any log files
+*.log

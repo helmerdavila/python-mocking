@@ -1,0 +1,5 @@
+{
+  "name": "Python 3.10 with Poetry",
+  "image": "mcr.microsoft.com/devcontainers/python:3.10",
+  "postCreateCommand": "curl -sSL https://install.python-poetry.org | python3 -"
+}
