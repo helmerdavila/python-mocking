@@ -15,6 +15,7 @@ build/
 .idea/
 
 # Ignore compiled Python files
+.pytest_cache/
 __pycache__/
 *.pyc
 *.pyo
