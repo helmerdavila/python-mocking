@@ -1,5 +1,5 @@
 from unittest.mock import patch
-from python_mocking import call_single_endpoint
+from python_mocking import call_single_endpoint, call_post_endpoint
 
 
 @patch("requests.get")
@@ -28,3 +28,10 @@ class TestRequests:
         second_result = call_single_endpoint()
         assert second_result == {"fruit": "apple"}
         assert mocked_requests_get.return_value.json.call_count == 2
+
+    @patch("requests.post")
+    def test_call_post_endpoint(self, mocked_requests_post):
+        mocked_requests_post.return_value.json.return_value = {"foo": "bar"}
+        call_post_endpoint()
+        assert mocked_requests_post.called_once
+        assert mocked_requests_post.return_value.json.return_value == {"foo": "bar"}
