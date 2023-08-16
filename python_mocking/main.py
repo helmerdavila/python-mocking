@@ -9,3 +9,8 @@ def call_single_endpoint():
 def call_post_endpoint():
     request = requests.post("https://jsonplaceholder.typicode.com/posts")
     return request.json()
+
+
+def call_post_endpoint_with_data(data):
+    request = requests.post("https://jsonplaceholder.typicode.com/posts", data)
+    return request.json()

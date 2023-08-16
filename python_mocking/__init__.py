@@ -1,3 +1,4 @@
-from .main import call_single_endpoint, call_post_endpoint
+from .main import call_single_endpoint, call_post_endpoint, call_post_endpoint_with_data
 
-__all__ = ["call_single_endpoint", "call_post_endpoint"]
+__all__ = ["call_single_endpoint", "call_post_endpoint",
+           "call_post_endpoint_with_data"]
